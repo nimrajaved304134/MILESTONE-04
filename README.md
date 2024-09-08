@@ -1,4 +1,6 @@
-# MILESTONE-04Milestone 4: Editable Resume (100 Points) 
+# MILESTONE-04
+
+Milestone 4: Editable Resume (100 Points) 
 
 Objective: 
 Make the generated resume editable after it’s created. 
