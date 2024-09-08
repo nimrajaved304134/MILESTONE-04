@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Form Section -->
+        <form id="resume-form">
+            <h2>Resume Builder Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required> <!-- HTML5 validation for email -->
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+            <label for="education">Education:</label>
+            <textarea id="education" required></textarea>
+            <label for="work-experience">Work Experience:</label>
+            <textarea id="work-experience" required></textarea>
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" required>
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*" required>
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Resume Display Section -->
+        <div id="resume-display" style="display:none;">
+            <h1 contenteditable="true" id="display-name"></h1>
+            <p contenteditable="true" id="display-email"></p>
+            <p contenteditable="true" id="display-phone"></p>
+            <h2>Education</h2>
+            <p contenteditable="true" id="display-education"></p>
+            <h2>Work Experience</h2>
+            <p contenteditable="true" id="display-work-experience"></p>
+            <h2>Skills</h2>
+            <ul id="display-skills" contenteditable="true"></ul>
+            <img id="display-profile-pic" alt="Profile Picture" style="display:none;">
+            <button id="edit-resume">Edit Resume</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
